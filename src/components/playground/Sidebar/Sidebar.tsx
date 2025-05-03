@@ -274,7 +274,7 @@ const Sidebar = () => {
                   transition={{ duration: 0.5, ease: 'easeInOut' }}
                 >
                   <div className="text-xs font-medium uppercase text-primary">
-                    {selectedEntityType === 'team' ? 'Team' : 'Agent'}
+                    {teams.length > 0 ? 'Team' : 'Agent'}
                   </div>
                   {isEndpointLoading ? (
                     <div className="flex w-full flex-col gap-2">
